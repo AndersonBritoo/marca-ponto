@@ -1,0 +1,10 @@
+services:
+  frappe:
+    image: frappe/bench:latest
+    container_name: frappe
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../:/workspace
+    working_dir: /workspace
+    tty: true
